@@ -1,0 +1,16 @@
+
+curl -X POST \
+  'http://localhost:3006/v1/create-note' \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json' \
+  -d '{
+    "user": "GIDEON@gmail.com",
+    "content": "Lecture Notes About Energy. What is energy? Energy is simply the ability to do work"
+  }'
+
+
+### Get a specific note request
+curl -X GET \
+  'http://localhost:3006/v1/get-note?user=lifeoferic1@gmail.com&note_id=ewuxbuexbeubxe' \
+  -H 'Accept: application/json' \
+  -H 'Content-Type: application/json'

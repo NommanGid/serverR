@@ -1,0 +1,8 @@
+CREATE TABLE notes (
+    id VARCHAR(50) NOT NULL PRIMARY KEY UNIQUE,
+    user VARCHAR(255) NOT NULL UNIQUE,
+    content LONGTEXT,
+    created_at VARCHAR(50) NOT NULL,
+    updated_at VARCHAR(50) NOT NULL
+);
+
